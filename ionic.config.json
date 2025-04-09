@@ -1,0 +1,7 @@
+{
+  "name": "epiccareApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
