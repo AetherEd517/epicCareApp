@@ -24,6 +24,10 @@ const routes: Routes = [
     path: 'sintomas-y-diagnosticos',
     loadChildren: () => import('./pages/sintomas-y-diagnosticos/sintomas-y-diagnosticos.module').then( m => m.SintomasYDiagnosticosPageModule)
   },
+  {
+    path: 'primeros-auxilios',
+    loadChildren: () => import('./pages/primeros-auxilios/primeros-auxilios.module').then( m => m.PrimerosAuxiliosPageModule)
+  },
 ];
 
 @NgModule({
