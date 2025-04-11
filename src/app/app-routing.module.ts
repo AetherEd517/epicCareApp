@@ -16,6 +16,14 @@ const routes: Routes = [
     path: 'inicio',
     loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   },
+  {
+    path: 'info',
+    loadChildren: () => import('./pages/info/info.module').then( m => m.InfoPageModule)
+  },
+  {
+    path: 'sintomas-y-diagnosticos',
+    loadChildren: () => import('./pages/sintomas-y-diagnosticos/sintomas-y-diagnosticos.module').then( m => m.SintomasYDiagnosticosPageModule)
+  },
 ];
 
 @NgModule({

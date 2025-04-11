@@ -1,0 +1,168 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Sintomas y diagnosticos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title>Sintomas y diagnosticos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Síntomas comunes:</ion-card-title>
+      <ion-card-subtitle>Haz clic para un poco mas de información</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item button id="convulsiones">
+          <img 
+            alt="Silhouette of mountains" 
+            src="https://ionicframework.com/docs/img/demos/thumbnail.svg" 
+            style="width: 20%; height: auto; border-radius: 10px;"/>
+          <!--ion-icon slot="start" name="add"></ion-icon-->
+          <ion-label class="alinear"> Convulsiones </ion-label>
+        </ion-item>
+        <ion-popover trigger="convulsiones" triggerAction="hover" size="cover">
+          <ng-template>
+            <ion-content class="ion-padding">Hello World!</ion-content>
+          </ng-template>
+        </ion-popover>
+
+        <ion-item button id="mirada">
+          <img 
+            alt="Silhouette of mountains" 
+            src="https://ionicframework.com/docs/img/demos/thumbnail.svg" 
+            style="width: 20%; height: auto; border-radius: 10px;"/>
+          <ion-label class="alinear"> Mirada fija</ion-label>
+        </ion-item>
+        <ion-popover trigger="mirada" triggerAction="hover" size="cover">
+          <ng-template>
+            <ion-content class="ion-padding">Hello World!</ion-content>
+          </ng-template>
+        </ion-popover>
+  
+        <ion-item button id="confusion">
+          <img 
+            alt="Silhouette of mountains" 
+            src="https://ionicframework.com/docs/img/demos/thumbnail.svg" 
+            style="width: 20%; height: auto; border-radius: 10px;"/>
+          <ion-label class="alinear">Confusión repentina</ion-label>
+        </ion-item>
+        <ion-popover trigger="confusion" triggerAction="hover" size="cover">
+          <ng-template>
+            <ion-content class="ion-padding">Hello World!</ion-content>
+          </ng-template>
+        </ion-popover>
+  
+        <ion-item button id="sacudida">
+          <img 
+            alt="Silhouette of mountains" 
+            src="https://ionicframework.com/docs/img/demos/thumbnail.svg" 
+            style="width: 20%; height: auto; border-radius: 10px;"/>
+          <ion-label class="alinear">Sacudidas de brazos o piernas</ion-label>
+        </ion-item>
+        <ion-popover trigger="sacudida" triggerAction="hover" size="cover">
+          <ng-template>
+            <ion-content class="ion-padding">Hello World!</ion-content>
+          </ng-template>
+        </ion-popover>
+
+        <ion-item button id="conciencia">
+          <img 
+            alt="Silhouette of mountains" 
+            src="https://ionicframework.com/docs/img/demos/thumbnail.svg" 
+            style="width: 20%; height: auto; border-radius: 10px;"/>
+          <ion-label class="alinear">Perdida de conciencia</ion-label>
+        </ion-item>
+        <ion-popover trigger="conciencia" triggerAction="hover" size="cover">
+          <ng-template>
+            <ion-content class="ion-padding">Hello World!</ion-content>
+          </ng-template>
+        </ion-popover>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- CARD DIAGNOSTICOS-->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Síntomas comunes:</ion-card-title>
+      <ion-card-subtitle>¿Para qué sirve?</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item button id="EEG ">
+          <img 
+            alt="Silhouette of mountains" 
+            src="https://ionicframework.com/docs/img/demos/thumbnail.svg" 
+            style="width: 20%; height: auto; border-radius: 10px;"/>
+          <!--ion-icon slot="start" name="add"></ion-icon-->
+          <ion-label class="alinear"> EEG (Electroencefalograma) </ion-label>
+        </ion-item>
+        <ion-popover trigger="EEG " triggerAction="hover" size="cover">
+          <ng-template>
+            <ion-content class="ion-padding">Registra la actividad eléctrica del cerebro.</ion-content>
+          </ng-template>
+        </ion-popover>
+
+        <ion-item button id="resonancia">
+          <img 
+            alt="Silhouette of mountains" 
+            src="https://ionicframework.com/docs/img/demos/thumbnail.svg" 
+            style="width: 20%; height: auto; border-radius: 10px;"/>
+          <ion-label class="alinear"> Resonancia magnética</ion-label>
+        </ion-item>
+        <ion-popover trigger="resonancia" triggerAction="hover" size="cover">
+          <ng-template>
+            <ion-content class="ion-padding">Muestra imágenes detalladas del cerebro.</ion-content>
+          </ng-template>
+        </ion-popover>
+  
+        <ion-item button id="entrevista">
+          <img 
+            alt="Silhouette of mountains" 
+            src="https://ionicframework.com/docs/img/demos/thumbnail.svg" 
+            style="width: 20%; height: auto; border-radius: 10px;"/>
+          <ion-label class="alinear">Entrevistas médicas</ion-label>
+        </ion-item>
+        <ion-popover trigger="entrevista" triggerAction="hover" size="cover">
+          <ng-template>
+            <ion-content class="ion-padding">Saber qué pasó antes, durante y después de una crisis ayuda mucho al diagnostico medico.</ion-content>
+          </ng-template>
+        </ion-popover>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>¿Cuándo acudir al médico.</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="8">
+            Si ves que una persona tiene más de una crisis, 
+            si dura más de 5 minutos o si no reacciona después.<br />
+            ¡Es importante acudir al neurólogo!
+          </ion-col>
+          <ion-col size="4" class="ion-text-end">
+            <img 
+              src="https://ionicframework.com/docs/img/demos/card-media.png" 
+              alt="Epilepsia" 
+              style="width: 100%; height: auto; border-radius: 10px;" />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button routerLink="/home" routerDirection="forward" expand="block">
+    Inicio
+  </ion-button>
+</ion-content>
