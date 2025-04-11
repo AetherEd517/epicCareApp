@@ -28,6 +28,10 @@ const routes: Routes = [
     path: 'primeros-auxilios',
     loadChildren: () => import('./pages/primeros-auxilios/primeros-auxilios.module').then( m => m.PrimerosAuxiliosPageModule)
   },
+  {
+    path: 'mitos-y-realidades',
+    loadChildren: () => import('./pages/mitos-y-realidades/mitos-y-realidades.module').then( m => m.MitosYRealidadesPageModule)
+  },
 ];
 
 @NgModule({
