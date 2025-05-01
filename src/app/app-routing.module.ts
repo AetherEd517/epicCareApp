@@ -4,34 +4,15 @@ import { HomePage } from './home/home.page';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'tabs',
     pathMatch: 'full'
   },
   {
-    path: 'inicio',
-    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
+    path: 'tabs',
+    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
   },
-  {
-    path: 'info',
-    loadChildren: () => import('./pages/info/info.module').then( m => m.InfoPageModule)
-  },
-  {
-    path: 'sintomas-y-diagnosticos',
-    loadChildren: () => import('./pages/sintomas-y-diagnosticos/sintomas-y-diagnosticos.module').then( m => m.SintomasYDiagnosticosPageModule)
-  },
-  {
-    path: 'primeros-auxilios',
-    loadChildren: () => import('./pages/primeros-auxilios/primeros-auxilios.module').then( m => m.PrimerosAuxiliosPageModule)
-  },
-  {
-    path: 'mitos-y-realidades',
-    loadChildren: () => import('./pages/mitos-y-realidades/mitos-y-realidades.module').then( m => m.MitosYRealidadesPageModule)
-  },
+
 ];
 
 @NgModule({
