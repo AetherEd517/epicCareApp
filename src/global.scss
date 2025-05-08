@@ -35,3 +35,18 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+ion-content.fondo-home {
+  --background: url('../src/assets/icon/EpicCare.png') no-repeat center calc(90%) / contain;
+}
+ion-content.fondo-info {
+  --background: url('../src/assets/icon/fondo1.png') no-repeat center calc(90%) / contain;
+}
+ion-content.fondo-sintomas {
+  --background: url('../src/assets/icon/fondo2.png') no-repeat center calc(90%) / contain;
+}
+ion-content.fondo-aux {
+  --background: url('../src/assets/icon/fondo3.png') no-repeat center calc(90%) / contain;
+}
+ion-content.fondo-mitos {
+  --background: url('../src/assets/icon/fondo4.png') no-repeat center calc(90%) / contain;
+}
