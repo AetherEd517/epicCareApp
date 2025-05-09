@@ -50,3 +50,42 @@ ion-content.fondo-aux {
 ion-content.fondo-mitos {
   --background: url('../src/assets/icon/fondo4.png') no-repeat center calc(90%) / contain;
 }
+
+ion-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.149);
+  color: #ffffff;
+}
+
+ion-card:nth-child(1) {
+  background: #b9d091d4;
+}
+
+ion-card:nth-child(2) {
+  background: #f6e0b5d2;
+}
+
+ion-card:nth-child(3) {
+  background: #6c7a94d3;
+}
+
+ion-card:nth-child(4) {
+  background: #d89880c8;
+}
+
+ion-card:nth-child(1) ion-card-title {
+  color: #698719;
+}
+
+ion-card:nth-child(2) ion-card-title {
+  color: #c3800d;
+}
+
+ion-card:nth-child(3) ion-card-title {
+  color: #14326f;
+}
+
+ion-card:nth-child(4) ion-card-title {
+  color: #a34123;
+}
