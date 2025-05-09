@@ -34,7 +34,12 @@
 
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
+
+
+
 @import "@ionic/angular/css/palettes/dark.system.css";
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sora:wght@100..800&display=swap');
+
 ion-content.fondo-home {
   --background: url('../src/assets/icon/EpicCare.png') no-repeat center calc(90%) / contain;
 }
@@ -50,6 +55,35 @@ ion-content.fondo-aux {
 ion-content.fondo-mitos {
   --background: url('../src/assets/icon/fondo4.png') no-repeat center calc(90%) / contain;
 }
+/* Aplica la tipografía a los componentes de Ionic */
+ion-header, ion-footer, ion-content, ion-button, ion-label, ion-title {
+  font-family: 'Sora', sans-serif;
+}
+
+ion-card-title, ion-item, ion-list, ion-chip {
+  font-family: 'Alfa Slab One', serif;
+}
+
+
+/* Aplica Sora para el cuerpo del texto */
+body {
+  font-family: 'Sora', sans-serif;
+}
+
+/* Aplica Alfa Slab One para los títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alfa Slab One', serif;
+}
+
+/* Asegúrate de que los textos dentro de los ion-card mantengan la tipografía deseada */
+ion-card {
+  font-family: 'Sora', sans-serif;  /* Para texto normal dentro de ion-card */
+}
+
+ion-card-title {
+  font-family: 'Alfa Slab One', serif;  /* Para títulos dentro de ion-card */
+}
+
 
 ion-card {
   background: rgba(255, 255, 255, 0.8);
@@ -73,19 +107,56 @@ ion-card:nth-child(3) {
 ion-card:nth-child(4) {
   background: #d89880c8;
 }
+ion-card:nth-child(5) {
+  background: #9d7bb6b4;
+}
+ion-card:nth-child(6) {
+  background: #3eb190bb;
+}
+ion-card:nth-child(7) {
+  background: #ee7f4fbd;
+}
+ion-card:nth-child(8) {
+  background: #ffdf2bbd;
+}
+ion-card:nth-child(9) {
+  background: #ffa8ccbd;
+}
+ion-card:nth-child(10) {
+  background: #a1c085c2;
+}
 
 ion-card:nth-child(1) ion-card-title {
-  color: #698719;
+  color: #6a8719d0;
 }
 
 ion-card:nth-child(2) ion-card-title {
-  color: #c3800d;
+  color: #c3800dd2;
 }
 
 ion-card:nth-child(3) ion-card-title {
-  color: #14326f;
+  color: #14326fcb;
 }
 
 ion-card:nth-child(4) ion-card-title {
-  color: #a34123;
+  color: #a34123cc;
+}
+
+ion-card:nth-child(5) ion-card-title{
+  color: #57207e;
+}
+ion-card:nth-child(6) ion-card-title{
+  color: #2e856c;
+}
+ion-card:nth-child(7) ion-card-title{
+  color: #bd4f20;
+}
+ion-card:nth-child(8) ion-card-title{
+  color: #daba05;
+}
+ion-card:nth-child(9) ion-card-title{
+  color: #db4383;
+}
+ion-card:nth-child(10) ion-card-title{
+  color: #69b428;
 }
