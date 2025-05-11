@@ -37,26 +37,26 @@
 
 
 
-@import "@ionic/angular/css/palettes/dark.system.css";
+/*@import "@ionic/angular/css/palettes/dark.system.css";*/
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sora:wght@100..800&display=swap');
 
 ion-content.fondo-home {
-  --background: url('../src/assets/icon/EpicCare.png') no-repeat center calc(90%) / contain;
+  --background: url('../src/assets/icon/EpicCare.png') no-repeat center center / cover;
 }
 ion-content.fondo-info {
-  --background: url('../src/assets/icon/fondo1.png') no-repeat center calc(90%) / contain;
+  --background: url('../src/assets/icon/fondo1.png') no-repeat center / cover;
 }
 ion-content.fondo-sintomas {
-  --background: url('../src/assets/icon/fondo2.png') no-repeat center calc(90%) / contain;
+  --background: url('../src/assets/icon/fondo2.png') no-repeat center / cover;
 }
 ion-content.fondo-aux {
-  --background: url('../src/assets/icon/fondo3.png') no-repeat center calc(90%) / contain;
+  --background: url('../src/assets/icon/fondo3.png') no-repeat center / cover;
 }
 ion-content.fondo-mitos {
-  --background: url('../src/assets/icon/fondo4.png') no-repeat center calc(90%) / contain;
+  --background: url('../src/assets/icon/fondo4.png') no-repeat center / cover;
 }
 ion-content.fondo-directorio{
-  --background: url('../src/assets/icon/fondo5.png') no-repeat center calc(90%) / contain;
+  --background: url('../src/assets/icon/fondo5.png') no-repeat center / cover;
 }
 /* Aplica la tipografía a los componentes de Ionic */
 ion-header, ion-footer, ion-content, ion-button, ion-label, ion-title {
