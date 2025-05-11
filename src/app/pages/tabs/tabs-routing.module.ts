@@ -32,6 +32,10 @@ const routes: Routes = [
       {
         path: 'mitos-y-realidades',
         loadChildren: () => import('./../../pages/mitos-y-realidades/mitos-y-realidades.module').then( m => m.MitosYRealidadesPageModule)
+      },
+      {
+        path: 'directorio',
+        loadChildren: () => import('./../../pages/directorio/directorio.module').then( m => m.DirectorioPageModule)
       }
     ]
   }

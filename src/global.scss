@@ -55,6 +55,9 @@ ion-content.fondo-aux {
 ion-content.fondo-mitos {
   --background: url('../src/assets/icon/fondo4.png') no-repeat center calc(90%) / contain;
 }
+ion-content.fondo-directorio{
+  --background: url('../src/assets/icon/fondo5.png') no-repeat center calc(90%) / contain;
+}
 /* Aplica la tipografía a los componentes de Ionic */
 ion-header, ion-footer, ion-content, ion-button, ion-label, ion-title {
   font-family: 'Sora', sans-serif;
@@ -160,3 +163,58 @@ ion-card:nth-child(9) ion-card-title{
 ion-card:nth-child(10) ion-card-title{
   color: #69b428;
 }
+
+ion-item[button] {
+  --background: rgba(255, 255, 255, 0.2); /* fondo translúcido */
+  backdrop-filter: blur(6px); /* efecto vidrio */
+  border-radius: 12px;
+  margin-bottom: 8px;
+  transition: 0.3s ease;
+}
+
+ion-item[button]:hover {
+  --background: rgba(255, 255, 255, 0.35); /* más opaco al pasar */
+}
+
+/* Estilos para los botones del menú */
+.menu-button {
+  --background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  margin: 8px 0;
+  transition: 0.3s ease;
+  --color: var(--ion-color-dark);
+  font-family: 'Sora', sans-serif;
+
+  ion-icon {
+    color: var(--ion-color-primary);
+    font-size: 24px;
+  }
+
+  &:hover {
+    --background: rgba(255, 255, 255, 0.35);
+    transform: translateX(5px);
+  }
+}
+
+ion-menu {
+  --width: 280px;
+  --background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+ion-menu ion-toolbar {
+  --background: transparent;
+  --border-color: transparent;
+}
+
+ion-menu ion-title {
+  font-family: 'Alfa Slab One', serif;
+  color: var(--ion-color-primary);
+}
+
+ion-menu ion-header {
+  --background: transparent;
+  --border-color: transparent;
+}
+

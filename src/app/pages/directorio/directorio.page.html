@@ -1,0 +1,345 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Directorio de Especialistas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo-directorio">
+  <ion-card class="animate-card">
+    <ion-card-header>
+      <ion-card-title>Especialistas en Epilepsia</ion-card-title>
+      <ion-card-subtitle>Encuentra el especialista más cercano a ti</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+
+        <!-- Especialista 1 -->
+        <ion-item button id="especialista1" class="especialista-item">
+          <img src="../assets/icon/doc1.png" alt="Especialista" style="width: 20%; border-radius: 10px;" />
+          <ion-label class="alinear">
+            <h2>Dr. Juan Pérez</h2>
+            <p>Neurólogo especialista en epilepsia</p>
+            <p>Hospital General de México</p>
+          </ion-label>
+        </ion-item>
+        <ion-popover trigger="especialista1" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <h3>Contacto</h3>
+              <ion-item lines="none">
+                <ion-icon name="call-outline" slot="start"></ion-icon>
+                <ion-label>(55) 1234-5678</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="mail-outline" slot="start"></ion-icon>
+                <ion-label>dr.perez&#64;hospital.com</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="location-outline" slot="start"></ion-icon>
+                <ion-label>CDMX</ion-label>
+              </ion-item>
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+
+        <!-- Especialista 2 -->
+        <ion-item button id="especialista2" class="especialista-item">
+          <img src="../assets/icon/doc2.png" alt="Especialista" style="width: 20%; border-radius: 10px;" />
+          <ion-label class="alinear">
+            <h2>Dra. Ana Gómez</h2>
+            <p>Neuropsiquiatra</p>
+            <p>Clínica Neurovida</p>
+          </ion-label>
+        </ion-item>
+        <ion-popover trigger="especialista2" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <h3>Contacto</h3>
+              <ion-item lines="none">
+                <ion-icon name="call-outline" slot="start"></ion-icon>
+                <ion-label>(33) 9876-5432</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="mail-outline" slot="start"></ion-icon>
+                <ion-label>ana.gomez&#64;neurovida.com</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="location-outline" slot="start"></ion-icon>
+                <ion-label>Guadalajara, Jalisco</ion-label>
+              </ion-item>
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+
+        <!-- Especialista 3 -->
+        <ion-item button id="especialista3" class="especialista-item">
+          <img src="../assets/icon/doc3.png" alt="Especialista" style="width: 20%; border-radius: 10px;" />
+          <ion-label class="alinear">
+            <h2>Dr. Luis Ramírez</h2>
+            <p>Neurólogo pediatra</p>
+            <p>Hospital Infantil de Monterrey</p>
+          </ion-label>
+        </ion-item>
+        <ion-popover trigger="especialista3" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <h3>Contacto</h3>
+              <ion-item lines="none">
+                <ion-icon name="call-outline" slot="start"></ion-icon>
+                <ion-label>(81) 1122-3344</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="mail-outline" slot="start"></ion-icon>
+                <ion-label>luis.ramirez&#64;infantilmonterrey.com</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="location-outline" slot="start"></ion-icon>
+                <ion-label>Monterrey, NL</ion-label>
+              </ion-item>
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+
+        <!-- Especialista 4 -->
+        <ion-item button id="especialista4" class="especialista-item">
+          <img src="../assets/icon/doc4.png" alt="Especialista" style="width: 20%; border-radius: 10px;" />
+          <ion-label class="alinear">
+            <h2>Dra. Karla Torres</h2>
+            <p>Epileptóloga</p>
+            <p>Centro Médico ABC</p>
+          </ion-label>
+        </ion-item>
+        <ion-popover trigger="especialista4" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <h3>Contacto</h3>
+              <ion-item lines="none">
+                <ion-icon name="call-outline" slot="start"></ion-icon>
+                <ion-label>(55) 9988-7766</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="mail-outline" slot="start"></ion-icon>
+                <ion-label>karla.torres&#64;cmabc.com</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="location-outline" slot="start"></ion-icon>
+                <ion-label>CDMX</ion-label>
+              </ion-item>
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+
+        <!-- Especialista 5 -->
+        <ion-item button id="especialista5" class="especialista-item">
+          <img src="../assets/icon/doc5.png" alt="Especialista" style="width: 20%; border-radius: 10px;" />
+          <ion-label class="alinear">
+            <h2>Dr. Mario Hernández</h2>
+            <p>Neurólogo clínico</p>
+            <p>Hospital Ángeles</p>
+          </ion-label>
+        </ion-item>
+        <ion-popover trigger="especialista5" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <h3>Contacto</h3>
+              <ion-item lines="none">
+                <ion-icon name="call-outline" slot="start"></ion-icon>
+                <ion-label>(33) 6655-7788</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="mail-outline" slot="start"></ion-icon>
+                <ion-label>m.hernandez&#64;hospitalangeles.com</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="location-outline" slot="start"></ion-icon>
+                <ion-label>Zapopan, Jalisco</ion-label>
+              </ion-item>
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+
+        <!-- Especialista 6 -->
+        <ion-item button id="especialista6" class="especialista-item">
+          <img src="../assets/icon/doc6.png" alt="Especialista" style="width: 20%; border-radius: 10px;" />
+          <ion-label class="alinear">
+            <h2>Dra. Sofía Martínez</h2>
+            <p>Neuróloga infantil</p>
+            <p>Clínica Cerebro Sano</p>
+          </ion-label>
+        </ion-item>
+        <ion-popover trigger="especialista6" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <h3>Contacto</h3>
+              <ion-item lines="none">
+                <ion-icon name="call-outline" slot="start"></ion-icon>
+                <ion-label>(55) 4455-6677</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="mail-outline" slot="start"></ion-icon>
+                <ion-label>sofia.martinez&#64;cerebrosano.com</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="location-outline" slot="start"></ion-icon>
+                <ion-label>CDMX</ion-label>
+              </ion-item>
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+
+        <!-- Especialista 7 -->
+        <ion-item button id="especialista7" class="especialista-item">
+          <img src="../assets/icon/doc7.png" alt="Especialista" style="width: 20%; border-radius: 10px;" />
+          <ion-label class="alinear">
+            <h2>Dr. Eduardo Salas</h2>
+            <p>Especialista en epilepsia refractaria</p>
+            <p>Hospital Civil</p>
+          </ion-label>
+        </ion-item>
+        <ion-popover trigger="especialista7" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <h3>Contacto</h3>
+              <ion-item lines="none">
+                <ion-icon name="call-outline" slot="start"></ion-icon>
+                <ion-label>(33) 1111-2222</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="mail-outline" slot="start"></ion-icon>
+                <ion-label>e.salas&#64;hospitalcivil.com</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="location-outline" slot="start"></ion-icon>
+                <ion-label>Guadalajara, Jalisco</ion-label>
+              </ion-item>
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+
+        <!-- Especialista 8 -->
+        <ion-item button id="especialista8" class="especialista-item">
+          <img src="../assets/icon/doc8.png" alt="Especialista" style="width: 20%; border-radius: 10px;" />
+          <ion-label class="alinear">
+            <h2>Dra. Fernanda Ruiz</h2>
+            <p>Neuróloga</p>
+            <p>Hospital ABC</p>
+          </ion-label>
+        </ion-item>
+        <ion-popover trigger="especialista8" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <h3>Contacto</h3>
+              <ion-item lines="none">
+                <ion-icon name="call-outline" slot="start"></ion-icon>
+                <ion-label>(55) 2233-4455</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="mail-outline" slot="start"></ion-icon>
+                <ion-label>f.ruiz&#64;abcmedico.com</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="location-outline" slot="start"></ion-icon>
+                <ion-label>CDMX</ion-label>
+              </ion-item>
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+
+        <!-- Especialista 9 -->
+        <ion-item button id="especialista9" class="especialista-item">
+          <img src="../assets/icon/doc9.png" alt="Especialista" style="width: 20%; border-radius: 10px;" />
+          <ion-label class="alinear">
+            <h2>Dr. Roberto Cruz</h2>
+            <p>Neurocirujano</p>
+            <p>Hospital Puerta de Hierro</p>
+          </ion-label>
+        </ion-item>
+        <ion-popover trigger="especialista9" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <h3>Contacto</h3>
+              <ion-item lines="none">
+                <ion-icon name="call-outline" slot="start"></ion-icon>
+                <ion-label>(33) 5566-7788</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="mail-outline" slot="start"></ion-icon>
+                <ion-label>r.cruz&#64;pdh.com</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="location-outline" slot="start"></ion-icon>
+                <ion-label>Zapopan, Jalisco</ion-label>
+              </ion-item>
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+
+        <!-- Especialista 10 -->
+        <ion-item button id="especialista10" class="especialista-item">
+          <img src="../assets/icon/doc10.png" alt="Especialista" style="width: 20%; border-radius: 10px;" />
+          <ion-label class="alinear">
+            <h2>Dra. Laura Esquivel</h2>
+            <p>Neuróloga integral</p>
+            <p>Consultorio privado</p>
+          </ion-label>
+        </ion-item>
+        <ion-popover trigger="especialista10" triggerAction="click">
+          <ng-template>
+            <ion-content class="ion-padding">
+              <h3>Contacto</h3>
+              <ion-item lines="none">
+                <ion-icon name="call-outline" slot="start"></ion-icon>
+                <ion-label>(55) 8899-7766</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="mail-outline" slot="start"></ion-icon>
+                <ion-label>laura.esquivel&#64;consultorio.com</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-icon name="location-outline" slot="start"></ion-icon>
+                <ion-label>CDMX</ion-label>
+              </ion-item>
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Consejos -->
+  <ion-card class="animate-card">
+    <ion-card-header>
+      <ion-card-title>¿Cómo elegir un especialista?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item lines="none">
+          <ion-icon name="checkmark-circle-outline" slot="start"></ion-icon>
+          <ion-label>Verifica su certificación médica y especialidad neurológica</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="checkmark-circle-outline" slot="start"></ion-icon>
+          <ion-label>Consulta si tiene experiencia específica en epilepsia</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="checkmark-circle-outline" slot="start"></ion-icon>
+          <ion-label>Pregunta por tratamientos que ofrece (medicación, cirugía, etc.)</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="checkmark-circle-outline" slot="start"></ion-icon>
+          <ion-label>Investiga opiniones de otros pacientes</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="checkmark-circle-outline" slot="start"></ion-icon>
+          <ion-label>Revisa si trabaja con tu seguro médico</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="checkmark-circle-outline" slot="start"></ion-icon>
+          <ion-label>Considera su ubicación y facilidad de transporte</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

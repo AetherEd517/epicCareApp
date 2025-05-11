@@ -6,7 +6,25 @@
           <ion-title>Menu</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-content class="ion-padding">This is the menu content.</ion-content>
+      <ion-content class="ion-padding">
+        <ion-list>
+          <ion-item button routerLink="/tabs/sintomas-y-diagnosticos" routerDirection="root" lines="none" class="menu-button">
+            <ion-icon name="medkit-outline" slot="start"></ion-icon>
+            <ion-label>Síntomas y Diagnósticos</ion-label>
+          </ion-item>
+
+          <ion-item button routerLink="/tabs/mitos-y-realidades" routerDirection="root" lines="none" class="menu-button">
+            <ion-icon name="help-circle-outline" slot="start"></ion-icon>
+            <ion-label>Mitos y Realidades</ion-label>
+          </ion-item>
+
+          <ion-item button routerLink="/tabs/directorio" routerDirection="root" lines="none" class="menu-button" (click)="navigateToDirectorio()">
+            <ion-icon name="people-outline" slot="start"></ion-icon>
+            <ion-label>Directorio de Especialistas</ion-label>
+          </ion-item>
+
+        </ion-list>
+      </ion-content>
     </ion-menu>
     <div class="ion-page" id="main-content">
       <ion-header>

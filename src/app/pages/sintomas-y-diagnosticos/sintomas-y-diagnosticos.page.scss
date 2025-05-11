@@ -1,3 +1,52 @@
 .alinear{
     margin-left: 8px;
 }
+
+ion-item[button] {
+  --background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+  animation: slideIn 0.3s ease-out;
+  
+  &:hover {
+    --background: rgba(255, 255, 255, 0.35);
+    transform: translateX(5px);
+  }
+  
+  ion-label {
+    font-family: 'Sora', sans-serif;
+    color: var(--ion-color-dark);
+  }
+}
+
+ion-card {
+  animation: fadeIn 0.5s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes slideIn {
+  from { 
+    transform: translateX(-100%); 
+  }
+  to { 
+    transform: translateX(0); 
+  }
+}
