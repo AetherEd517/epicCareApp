@@ -38,7 +38,29 @@
 
 
 /*@import "@ionic/angular/css/palettes/dark.system.css";*/
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+/* Variables globales de tipografía */
+:root {
+  --font-title: 'Acme', sans-serif;
+  --font-subtitle: 'Sora', sans-serif;
+  --font-body: 'Sora', sans-serif;
+}
+
+/* Variables de colores */
+:root {
+  --color-home: #6a8719d0;
+  --color-info: #c3800dd2;
+  --color-sintomas: #14326fcb;
+  --color-aux: #a34123cc;
+  --color-mitos: #57207e;
+  --color-directorio: #2e856c;
+  --color-cuestionario: #bd4f20;
+  --color-contacto: #daba05;
+  --color-ubicacion: #db4383;
+  --color-check: #69b428;
+}
 
 ion-content.fondo-home {
   --background: url('../src/assets/icon/EpicCare.png') no-repeat center center / cover;
@@ -59,37 +81,29 @@ ion-content.fondo-directorio{
   --background: url('../src/assets/icon/fondo5.png') no-repeat center / cover;
 }
 ion-content.fondo-cuestionario{
-  --background: url('../src/assets/icon/fondo5.png') no-repeat center / cover;
+  --background: url('../src/assets/icon/fondo6.png') no-repeat center / cover;
 }
+
 /* Aplica la tipografía a los componentes de Ionic */
-ion-header, ion-footer, ion-content, ion-button, ion-label, ion-title {
-  font-family: 'Sora', sans-serif;
+ion-header, ion-footer, ion-content, ion-button, ion-label {
+  font-family: var(--font-body);
 }
 
-ion-card-title, ion-item, ion-list, ion-chip {
-  font-family: 'Alfa Slab One', serif;
+/* Títulos */
+h1, h2, h3, h4, h5, h6, ion-title, ion-card-title {
+  font-family: var(--font-title);
 }
 
-
-/* Aplica Sora para el cuerpo del texto */
-body {
-  font-family: 'Sora', sans-serif;
+/* Subtítulos y preguntas */
+ion-item h2, ion-item h3, .subtitle, .question {
+  font-family: var(--font-subtitle);
+  font-weight: 700;
 }
 
-/* Aplica Alfa Slab One para los títulos */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Alfa Slab One', serif;
+/* Texto normal */
+body, ion-content, ion-card, ion-item, ion-label p {
+  font-family: var(--font-body);
 }
-
-/* Asegúrate de que los textos dentro de los ion-card mantengan la tipografía deseada */
-ion-card {
-  font-family: 'Sora', sans-serif;  /* Para texto normal dentro de ion-card */
-}
-
-ion-card-title {
-  font-family: 'Alfa Slab One', serif;  /* Para títulos dentro de ion-card */
-}
-
 
 ion-card {
   background: rgba(255, 255, 255, 0.8);
@@ -187,7 +201,7 @@ ion-item[button]:hover {
   margin: 8px 0;
   transition: 0.3s ease;
   --color: var(--ion-color-dark);
-  font-family: 'Sora', sans-serif;
+  font-family: var(--font-body);
 
   ion-icon {
     color: var(--ion-color-primary);
@@ -212,12 +226,272 @@ ion-menu ion-toolbar {
 }
 
 ion-menu ion-title {
-  font-family: 'Alfa Slab One', serif;
+  font-family: var(--font-title);
   color: var(--ion-color-primary);
 }
 
 ion-menu ion-header {
   --background: transparent;
   --border-color: transparent;
+}
+
+/* Estilos específicos para el cuestionario */
+.question {
+  font-family: var(--font-subtitle);
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.answer {
+  font-family: var(--font-body);
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+ion-radio-group {
+  font-family: var(--font-body);
+}
+
+ion-radio {
+  --color: var(--ion-color-primary);
+  --color-checked: var(--ion-color-primary);
+}
+
+ion-label {
+  font-family: var(--font-body);
+}
+
+/* Estilos para los iconos */
+ion-icon {
+  &[name="home-outline"] {
+    color: var(--color-home);
+  }
+
+  &[name="information-circle-outline"] {
+    color: var(--color-info);
+  }
+
+  &[name="medical-outline"] {
+    color: var(--color-sintomas);
+  }
+
+  &[name="help-circle-outline"] {
+    color: var(--color-aux);
+  }
+
+  &[name="people-outline"] {
+    color: var(--color-mitos);
+  }
+
+  &[name="document-text-outline"] {
+    color: var(--color-directorio);
+  }
+
+  &[name="call-outline"] {
+    color: var(--color-cuestionario);
+  }
+
+  &[name="mail-outline"] {
+    color: var(--color-contacto);
+  }
+
+  &[name="location-outline"] {
+    color: var(--color-ubicacion);
+  }
+
+  &[name="checkmark-circle-outline"] {
+    color: var(--color-check);
+  }
+
+  /* Iconos de síntomas */
+  &[name="pulse-outline"],
+  &[name="fitness-outline"],
+  &[name="body-outline"],
+  &[name="medkit-outline"],
+  &[name="alert-circle-outline"],
+  &[name="warning-outline"] {
+    color: var(--color-sintomas);
+  }
+
+  /* Iconos de mitos */
+  &[name="help-circle-outline"],
+  &[name="information-circle-outline"],
+  &[name="chatbubble-outline"],
+  &[name="book-outline"],
+  &[name="school-outline"],
+  &[name="bulb-outline"] {
+    color: var(--color-mitos);
+  }
+
+  /* Iconos de primeros auxilios */
+  &[name="medkit-outline"],
+  &[name="bandage-outline"],
+  &[name="heart-outline"],
+  &[name="shield-checkmark-outline"],
+  &[name="hand-left-outline"],
+  &[name="call-outline"],
+  &[name="alert-outline"],
+  &[name="medical-outline"] {
+    color: var(--color-aux);
+  }
+}
+
+/* Estilos para los textos en las tarjetas */
+ion-card {
+  &.sintomas-card {
+    ion-card-title, ion-card-subtitle, ion-label {
+      color: var(--color-sintomas);
+    }
+    ion-icon {
+      color: var(--color-sintomas);
+    }
+  }
+
+  &.mitos-card {
+    ion-card-title, ion-card-subtitle, ion-label {
+      color: var(--color-mitos);
+    }
+    ion-icon {
+      color: var(--color-mitos);
+    }
+  }
+
+  &.aux-card {
+    ion-card-title, ion-card-subtitle, ion-label {
+      color: var(--color-aux);
+    }
+    ion-icon {
+      color: var(--color-aux);
+    }
+  }
+
+  &.directorio-card {
+    ion-card-title, ion-card-subtitle, ion-label {
+      color: var(--color-directorio);
+    }
+    ion-icon {
+      color: var(--color-directorio);
+    }
+  }
+
+  &.cuestionario-card {
+    ion-card-title, ion-card-subtitle, ion-label {
+      color: var(--color-cuestionario);
+    }
+    ion-icon {
+      color: var(--color-cuestionario);
+    }
+  }
+}
+
+/* Estilos para los elementos del menú */
+ion-menu ion-item {
+  &[routerLink="/home"] {
+    --color: var(--color-home);
+    ion-icon {
+      color: var(--color-home);
+    }
+  }
+
+  &[routerLink="/info"] {
+    --color: var(--color-info);
+    ion-icon {
+      color: var(--color-info);
+    }
+  }
+
+  &[routerLink="/sintomas"] {
+    --color: var(--color-sintomas);
+    ion-icon {
+      color: var(--color-sintomas);
+    }
+  }
+
+  &[routerLink="/aux"] {
+    --color: var(--color-aux);
+    ion-icon {
+      color: var(--color-aux);
+    }
+  }
+
+  &[routerLink="/mitos"] {
+    --color: var(--color-mitos);
+    ion-icon {
+      color: var(--color-mitos);
+    }
+  }
+
+  &[routerLink="/directorio"] {
+    --color: var(--color-directorio);
+    ion-icon {
+      color: var(--color-directorio);
+    }
+  }
+
+  &[routerLink="/cuestionario"] {
+    --color: var(--color-cuestionario);
+    ion-icon {
+      color: var(--color-cuestionario);
+    }
+  }
+}
+
+/* Estilos para las pestañas */
+ion-tab-button {
+  &[tab="home"] {
+    --color-selected: var(--color-home);
+    ion-icon {
+      color: var(--color-home);
+    }
+  }
+
+  &[tab="info"] {
+    --color-selected: var(--color-info);
+    ion-icon {
+      color: var(--color-info);
+    }
+  }
+
+  &[tab="sintomas"] {
+    --color-selected: var(--color-sintomas);
+    ion-icon {
+      color: var(--color-sintomas);
+    }
+  }
+
+  &[tab="aux"] {
+    --color-selected: var(--color-aux);
+    ion-icon {
+      color: var(--color-aux);
+    }
+  }
+
+  &[tab="mitos"] {
+    --color-selected: var(--color-mitos);
+    ion-icon {
+      color: var(--color-mitos);
+    }
+  }
+
+  &[tab="directorio"] {
+    --color-selected: var(--color-directorio);
+    ion-icon {
+      color: var(--color-directorio);
+    }
+  }
+
+  &[tab="cuestionario"] {
+    --color-selected: var(--color-cuestionario);
+    ion-icon {
+      color: var(--color-cuestionario);
+    }
+  }
+}
+
+/* Estilos para los iconos activos en las pestañas */
+ion-tab-button.tab-selected ion-icon {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
 }
 

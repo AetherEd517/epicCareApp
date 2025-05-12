@@ -8,9 +8,9 @@
   <form (ngSubmit)="enviarResultados()" #formCuestionario="ngForm">
       <ion-list>
         <ion-item *ngFor="let p of preguntas; index as i">
-          <ion-label position="stacked">{{ p.texto }}</ion-label>
+          <ion-label position="stacked" class="question">{{ p.texto }}</ion-label>
           <ion-select
-          class="estilo-select"
+            class="answer estilo-select"
             [(ngModel)]="p.respuesta"
             name="respuesta{{ i }}"
             placeholder="Selecciona una opción"
@@ -20,7 +20,7 @@
             required
           >
             <ion-select-option
-              class="estilo-select"
+              class="answer estilo-select"
               *ngFor="let opcion of p.opciones"
               [value]="opcion"
             >
