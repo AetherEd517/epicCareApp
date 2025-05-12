@@ -58,6 +58,9 @@ ion-content.fondo-mitos {
 ion-content.fondo-directorio{
   --background: url('../src/assets/icon/fondo5.png') no-repeat center / cover;
 }
+ion-content.fondo-cuestionario{
+  --background: url('../src/assets/icon/fondo5.png') no-repeat center / cover;
+}
 /* Aplica la tipografía a los componentes de Ionic */
 ion-header, ion-footer, ion-content, ion-button, ion-label, ion-title {
   font-family: 'Sora', sans-serif;

@@ -1,13 +1,18 @@
 <ion-tabs>
   <ion-tab-bar slot="bottom" [translucent]="true">
-    <ion-tab-button tab="home">
+    <!--<ion-tab-button tab="home">
       <ion-icon name="home-outline"></ion-icon>
       <ion-label>Home</ion-label>
-    </ion-tab-button>
+    </ion-tab-button>-->
 
     <ion-tab-button tab="info">
       <ion-icon name="information-circle-outline"></ion-icon>
       <ion-label>Información</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="cuestionario">
+      <ion-icon name="help-outline"></ion-icon>
+      <ion-label>Cuestionario</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="directorio">
@@ -17,9 +22,12 @@
 
     <ion-tab-button>
       <ion-buttons>
-        <ion-menu-button></ion-menu-button>
+        <ion-menu-button>
+        </ion-menu-button>
       </ion-buttons>
-      <ion-label>Menu</ion-label>
+        <ion-label>
+          Menu
+        </ion-label>
     </ion-tab-button>
   </ion-tab-bar>
 </ion-tabs>
