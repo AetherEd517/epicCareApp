@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController, IonItem, IonList, IonSelect, IonSelectOption } from '@ionic/angular';
-
+import { IonModal } from '@ionic/angular';
 interface Pregunta {
   id: number;
   texto: string;
@@ -50,17 +50,17 @@ export class CuestionarioPage implements OnInit {
         id: 4,
         texto: '¿Qué es un aura epiléptica?',
         opciones: [
-          'Una especie de aviso antes de una crisis, con sensaciones extrañas.',
-          'Un sonido misterioso que ocurre en el cerebro.',
-          'Una medicina contra la epilepsia.',
-          'Un dibujo en la piel durante la crisis.'
+          'Aviso antes de una crisis, con sensaciones extrañas.',
+          'Sonido misterioso que ocurre en el cerebro.',
+          'Medicina contra la epilepsia.',
+          'Dibujo en la piel durante la crisis.'
         ]
       },
       {
         id: 5,
         texto: '¿Cuál de estos es un síntoma común durante una crisis epiléptica?',
         opciones: [
-          'Movimientos bruscos e incontrolables del cuerpo (convulsiones).',
+          'Movimientos bruscos del cuerpo (convulsiones).',
           'Fiebre alta.',
           'Dolor de garganta.',
           'Hambre repentina.'
@@ -81,7 +81,7 @@ export class CuestionarioPage implements OnInit {
         texto: '¿Cuál de estas afirmaciones es FALSA sobre la epilepsia?',
         opciones: [
           'La epilepsia no se contagia de persona a persona.',
-          'Con tratamiento adecuado, las personas con epilepsia pueden llevar una vida normal.',
+          'Las personas con epilepsia pueden llevar una vida normal.',
           'Las personas con epilepsia no pueden hacer ejercicio.',
           'La epilepsia es un trastorno neurológico, no una enfermedad mental.'
         ]
@@ -91,7 +91,7 @@ export class CuestionarioPage implements OnInit {
         texto: 'Durante una crisis epiléptica, ¿qué debes hacer para ayudar a la persona?',
         opciones: [
           'Sujetarla con fuerza para que no se mueva.',
-          'Colocar algo suave (como una ropa doblada) bajo su cabeza.',
+          'Colocar algo suave bajo su cabeza.',
           'Meterle un objeto en la boca.',
           'Gritarle al oído para despertarla.'
         ]
@@ -112,11 +112,11 @@ export class CuestionarioPage implements OnInit {
       'Condición que provoca crisis o convulsiones.',
       'Crisis generalizadas.',
       'Lesiones en la cabeza.',
-      'Una especie de aviso antes de una crisis, con sensaciones extrañas.',
-      'Movimientos bruscos e incontrolables del cuerpo (convulsiones).',
+      'Aviso antes de una crisis, con sensaciones extrañas.',
+      'Movimientos bruscos del cuerpo (convulsiones).',
       'Electroencefalograma (EEG).',
       'Las personas con epilepsia no pueden hacer ejercicio.',
-      'Colocar algo suave (como una ropa doblada) bajo su cabeza.',
+      'Colocar algo suave bajo su cabeza.',
       'Verdadero',
       'Verdadero'
     ];
@@ -129,6 +129,9 @@ export class CuestionarioPage implements OnInit {
         }
       });
       await this.mostrarCalificacion(puntos);
+
+      // Cierra el modal
+      this.preguntas.forEach(p => p.respuesta = '');
     }
   
     async mostrarCalificacion(puntos: number) {
